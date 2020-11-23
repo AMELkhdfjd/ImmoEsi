@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Administrateur">
+   <children>
+      <MenuBar layoutX="13.0" prefHeight="48.0" prefWidth="574.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Affichage">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Afficher  tous les biens" />
+                  <MenuItem mnemonicParsing="false" text="Afficher les biens d'un propriétaire" />
+                  <MenuItem mnemonicParsing="false" text="Afficher les prix finaux des biens" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Modifier un bien">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Modifier" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Opération sur un bien">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Ajouter un bien" />
+                  <MenuItem mnemonicParsing="false" text="Archiver un bien" />
+                  <MenuItem mnemonicParsing="false" text="Supprimmer un bien" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <GridPane layoutX="14.0" layoutY="49.0" prefHeight="324.0" prefWidth="354.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="174.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="0.0" prefWidth="180.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="56.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="57.0" minHeight="4.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="27.0" minHeight="0.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>
